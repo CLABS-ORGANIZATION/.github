@@ -1,0 +1,35 @@
+name: Bug
+description: Report an unexpected behaviour that needs correction.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Select the organisational Issue type **Bug** after creation. Never include secrets or personal data.
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behaviour
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction or evidence
+      description: Steps, logs with sensitive data removed, screenshot, trace, or link.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Relevant KB, ADR, CR, operational record, PR, or evidence links.
+    validations:
+      required: false

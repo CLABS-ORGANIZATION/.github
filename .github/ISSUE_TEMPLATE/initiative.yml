@@ -1,0 +1,35 @@
+name: Initiative
+description: Coordinate a body of work spanning outcomes or repositories.
+title: "[Initiative]: "
+body:
+  - type: markdown
+    attributes:
+      value: Select the organisational Issue type **Initiative** after creation.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended outcome
+      description: The measurable outcome this initiative coordinates.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and boundaries
+      description: Included work, explicitly excluded work, and involved repositories or systems.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Completion evidence
+      description: How will we know the initiative is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Relevant KB, ADR, CR, operational record, PR, or evidence links.
+    validations:
+      required: false

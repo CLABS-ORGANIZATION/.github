@@ -1,0 +1,30 @@
+name: Task or operation
+description: Create a bounded task or controlled operational activity.
+title: "[Task]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for a bounded outcome. Select the organisational Issue type
+        **Task** or **Operation** after creation.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended outcome
+      description: What will be true when this is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Evidence or observable condition that proves completion.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Relevant KB, ADR, CR, operational record, PR, or evidence links.
+    validations:
+      required: false

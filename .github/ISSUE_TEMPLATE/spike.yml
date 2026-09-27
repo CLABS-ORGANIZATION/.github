@@ -1,0 +1,35 @@
+name: Spike
+description: Investigate a bounded uncertainty before committing to delivery work.
+title: "[Spike]: "
+body:
+  - type: markdown
+    attributes:
+      value: Select the organisational Issue type **Spike** after creation.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question to resolve
+      description: State the uncertainty and the decision it unblocks.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Timebox and boundaries
+      description: What is in scope for the investigation, and what is not?
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output
+      description: Decision, recommendation, evidence, or follow-up work record.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Relevant KB, ADR, CR, operational record, PR, or evidence links.
+    validations:
+      required: false
