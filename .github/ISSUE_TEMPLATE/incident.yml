@@ -1,0 +1,35 @@
+name: Incident
+description: Record an operational disruption and its follow-up.
+title: "[Incident]: "
+body:
+  - type: markdown
+    attributes:
+      value: Select the organisational Issue type **Incident** after creation. Never include secrets or personal data.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who or what is affected, and how severely?
+    validations:
+      required: true
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline and observations
+      description: Relevant timestamps, symptoms, and evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Mitigation and current state
+      description: Actions already taken and the current operational state.
+    validations:
+      required: true
+  - type: textarea
+    id: followup
+    attributes:
+      label: Follow-up and references
+      description: Related ADR, CR, OP, root-cause work, or evidence links.
+    validations:
+      required: false

@@ -1,0 +1,35 @@
+name: Feature
+description: Propose or deliver a product capability.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: Select the organisational Issue type **Feature** after creation.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User or system outcome
+      description: What capability becomes available, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and boundaries
+      description: Include the meaningful boundaries and exclusions.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Verifiable conditions for completion.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Relevant KB, ADR, CR, operational record, PR, or evidence links.
+    validations:
+      required: false

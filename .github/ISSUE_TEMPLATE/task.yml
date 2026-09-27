@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Use this for a bounded outcome. Select the organisational Issue type
-        **Task** or **Operation** after creation.
+        **Task** after creation.
   - type: textarea
     id: outcome
     attributes:

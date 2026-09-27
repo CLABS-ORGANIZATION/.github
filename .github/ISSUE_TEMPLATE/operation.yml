@@ -1,0 +1,35 @@
+name: Operation
+description: Plan a controlled operational activity.
+title: "[Operation]: "
+body:
+  - type: markdown
+    attributes:
+      value: Select the organisational Issue type **Operation** after creation. Never include secrets or credentials.
+  - type: textarea
+    id: target
+    attributes:
+      label: Target and intended outcome
+      description: What system, environment, or process is affected and what should result?
+    validations:
+      required: true
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Preconditions and risk
+      description: Required access, dependencies, anticipated risk, and approved window if any.
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback or recovery
+      description: How the operation is reversed or recovered if it does not complete safely.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Completion evidence
+      description: Links to workflow, runtime evidence, report, or verification.
+    validations:
+      required: true
